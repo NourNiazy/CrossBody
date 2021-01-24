@@ -1,0 +1,59 @@
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and (max-width: 992px) {
+        flex-direction: column;
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 992px) {
+        flex-direction: column;
+    }
+}
+
+@mixin background-icon($imgurl, $dir, $Value) {
+    background-image: url('../images/#{$imgurl}.png');
+    padding-#{$dir}: $Value;
+    background-repeat: no-repeat;
+    background-position: $dir;
+}
+
+@mixin background-icon-svg($imgurl,
+$dir,
+$Value) {
+    background-image: url('../images/#{$imgurl}.svg');
+    padding-#{$dir}: $Value;
+    background-repeat: no-repeat;
+    background-position: $dir;
+}
+
+@mixin background($imgurl,
+$width,
+$hieght) {
+    background-image: url('../images/#{$imgurl}.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: $width;
+    height: $hieght;
+}
+
+@mixin background-svg($imgurl,
+$width,
+$hieght) {
+    background-image: url('../images/#{$imgurl}.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: $width;
+    height: $hieght;
+}

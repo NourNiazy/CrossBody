@@ -1,0 +1,253 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    object-fit: cover;
+}
+
+@font-face {
+    font-family: 'Lato', ;;
+    src: url("../fonts/Avenir-Black-03.ttf");
+}
+
+@font-face {
+    font-family: 'Lato', ;
+    src: url("../fonts/Avenir-BlackOblique-04.ttf");
+}
+
+@font-face {
+    font-family: 'Lato', ;
+    src: url("../fonts/Avenir-Book-01.ttf");
+}
+
+@font-face {
+    font-family: 'Lato', ;
+    src: url("../fonts/Avenir-BookOblique-02.ttf");
+}
+
+@font-face {
+    font-family: 'Lato', ;
+    src: url("../fonts/Avenir-Heavy-05.ttf");
+}
+
+@font-face {
+    font-family: avenir;
+    src: url("../fonts/Avenir-HeavyOblique-06.ttf");
+}
+
+@font-face {
+    font-family: 'Lato', ;
+    src: url("../fonts/Avenir-Light-07.ttf");
+}
+
+@font-face {
+    font-family: 'Lato', ;
+    src: url("../fonts/Avenir-LightOblique-08.ttf");
+}
+
+@font-face {
+    font-family: 'Lato', ;
+    src: url("../fonts/Avenir-Medium-09.ttf");
+}
+
+@font-face {
+    font-family: 'Lato', ;
+    src: url("../fonts/Avenir-MediumOblique-10.ttf");
+}
+
+@font-face {
+    font-family: avenir;
+    src: url("../fonts/Avenir-Oblique-11.ttf");
+}
+
+@font-face {
+    font-family: 'Lato', ;
+    src: url("../fonts/Avenir-Roman-12.ttf");
+}
+.container {
+    width: 1180px;
+    margin: 0 auto;
+    font-family: "Work Sans", Arial, sans-serif;
+    @media screen and(max-width: 768px) {
+        width: 100%;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        margin: 0px;
+    }
+}
+.hide-resposive {
+    display: flex !important;
+    @media only screen and (max-width: 992px) {
+        display: none !important;
+    }
+}
+
+.hide-desktop {
+    display: none !important;
+    @media only screen and (max-width: 992px) {
+        display: flex !important;
+    }
+}
+
+p{
+    margin: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    font-family: "Work Sans", Arial, sans-serif;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Lato' !important ;
+    font-family: 'Lato', sans-serif;
+    background: #ffffff;
+    @media only screen and (max-width: 992px) {
+        padding-bottom: 40px;
+    }
+}
+
+.ul {
+    @include reset-list;
+    @include flex;
+}
+
+.input-widget {
+    label {
+        font-size: 16px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    input {
+        width: 100%;
+        outline: none;
+        height: 64px;
+        border: 1px solid #d8d8d8;
+        margin-bottom: 40px;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: #8d9397;
+    }
+}
+
+button,
+input,
+textarea {
+    outline: none;
+    padding: 0px 5px;
+    font-size: 16px;
+}
+
+textarea {
+    padding: 5px;
+}
+
+.button {
+    font-size :15px;
+    font-weight: 400;
+    border: none;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    background-image: $linear-gradient ;
+
+    &:hover{
+        background-color: transparent;
+        color:$maincolor;
+        box-sizing: border-box;
+    }
+}
+.reverse-button{
+    border: 1px solid $maincolor;
+    background-color: transparent;
+    color:$maincolor;
+    box-sizing: border-box;
+    height: 35px;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    box-sizing: border-box;
+    &:hover{
+        background: $maincolor;
+        color: #fff;
+        border: 0px;
+    }
+}
+
+/*SEHHATEC*/
+
+.purple-short-hr {
+    border: none;
+    background-color: $maincolor;
+    height: 1px;
+    width: 970px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    @media only screen and (max-width: 992px) {
+        width: 100%;
+    }
+}
+
+.purple-long-hr {
+    border: none;
+    background-color: $maincolor;
+    height: 1px;
+    width: 1170px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    @media only screen and (max-width: 992px) {
+        width: 100%;
+    }
+}
+
+.gray-short-hr {
+    border: none;
+    height: 1px;
+    width: 970px;
+    background-color: rgba(233, 233, 233, 1);
+    margin: 30px 0px;
+    @media only screen and (max-width: 992px) {
+        width: 100%;
+    }
+}
+
+.h2-sehhatec {
+    font-size: 22px;
+    color: $maincolor;
+    @media only screen and (max-width: 992px) {
+        font-size: 20px;
+    }
+}
+
+input {
+    font-size: 18px;
+    color: $maincolor;
+    &::placeholder {
+        font-size: 18px;
+        color:#c1c1c1;
+    }
+}
+
+textarea {
+    resize: none;
+    &::placeholder {
+        font-size: 18px;
+        color:#c1c1c1;
+    }
+}
+i{
+    color:rgb(143, 145, 149);
+}
+.linear-gradient-font{
+    
+}

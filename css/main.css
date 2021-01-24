@@ -1,0 +1,1688 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  font-size: 18px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Avenir-Black-03.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Avenir-BlackOblique-04.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Avenir-Book-01.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Avenir-BookOblique-02.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Avenir-Heavy-05.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-HeavyOblique-06.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Avenir-Light-07.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Avenir-LightOblique-08.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Avenir-Medium-09.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Avenir-MediumOblique-10.ttf");
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-Oblique-11.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Avenir-Roman-12.ttf");
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+  font-family: "Work Sans", Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0px;
+  }
+}
+
+.hide-resposive {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-resposive {
+    display: none !important;
+  }
+}
+
+.hide-desktop {
+  display: none !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-desktop {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+p {
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  font-family: "Work Sans", Arial, sans-serif;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Lato' !important;
+  font-family: 'Lato', sans-serif;
+  background: #ffffff;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    padding-bottom: 40px;
+  }
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.input-widget label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.input-widget input {
+  width: 100%;
+  outline: none;
+  height: 64px;
+  border: 1px solid #d8d8d8;
+  margin-bottom: 40px;
+  padding: 0px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  color: #8d9397;
+}
+
+button,
+input,
+textarea {
+  outline: none;
+  padding: 0px 5px;
+  font-size: 16px;
+}
+
+textarea {
+  padding: 5px;
+}
+
+.button {
+  font-size: 15px;
+  font-weight: 400;
+  border: none;
+  padding: 8px 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #eb592d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.reverse-button {
+  border: 1px solid #eb592d;
+  background-color: transparent;
+  color: #eb592d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 35px;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.reverse-button:hover {
+  background: #eb592d;
+  color: #fff;
+  border: 0px;
+}
+
+/*SEHHATEC*/
+.purple-short-hr {
+  border: none;
+  background-color: #eb592d;
+  height: 1px;
+  width: 970px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .purple-short-hr {
+    width: 100%;
+  }
+}
+
+.purple-long-hr {
+  border: none;
+  background-color: #eb592d;
+  height: 1px;
+  width: 1170px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .purple-long-hr {
+    width: 100%;
+  }
+}
+
+.gray-short-hr {
+  border: none;
+  height: 1px;
+  width: 970px;
+  background-color: #e9e9e9;
+  margin: 30px 0px;
+}
+
+@media only screen and (max-width: 992px) {
+  .gray-short-hr {
+    width: 100%;
+  }
+}
+
+.h2-sehhatec {
+  font-size: 22px;
+  color: #eb592d;
+}
+
+@media only screen and (max-width: 992px) {
+  .h2-sehhatec {
+    font-size: 20px;
+  }
+}
+
+input {
+  font-size: 18px;
+  color: #eb592d;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #c1c1c1;
+}
+
+input:-ms-input-placeholder {
+  font-size: 18px;
+  color: #c1c1c1;
+}
+
+input::-ms-input-placeholder {
+  font-size: 18px;
+  color: #c1c1c1;
+}
+
+input::placeholder {
+  font-size: 18px;
+  color: #c1c1c1;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #c1c1c1;
+}
+
+textarea:-ms-input-placeholder {
+  font-size: 18px;
+  color: #c1c1c1;
+}
+
+textarea::-ms-input-placeholder {
+  font-size: 18px;
+  color: #c1c1c1;
+}
+
+textarea::placeholder {
+  font-size: 18px;
+  color: #c1c1c1;
+}
+
+i {
+  color: #8f9195;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+  #res {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background-position: center;
+    -webkit-box-shadow: 5px 5px 13px 0 rgba(204, 22, 134, 0.3);
+            box-shadow: 5px 5px 13px 0 rgba(204, 22, 134, 0.3);
+    display: block;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+  }
+}
+
+header {
+  background: transparent;
+  z-index: 12;
+  width: 100%;
+  position: absolute;
+  padding: 20px 0px;
+  position: fixed;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    height: 80px;
+    width: 100% !important;
+  }
+}
+
+header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  header .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .content {
+    width: 100% !important;
+  }
+}
+
+header .content .icon {
+  display: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  header .content .icon {
+    display: block;
+  }
+}
+
+header .content .icon i {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  header .content .icon i {
+    display: block;
+  }
+}
+
+header .content a {
+  font-size: 20px;
+  font-weight: 900;
+  font-family: 'Work Sans', sans-serif;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-attachment: scroll;
+  background-image: url(../img/logo-bg.jpg);
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+header .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+@media only screen and (max-width: 992px) {
+  header .content ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .content ul {
+    background-color: #1F1F1F;
+    padding: 20px;
+    text-align: center;
+    display: none;
+  }
+}
+
+header .content ul li {
+  list-style: none;
+}
+
+header .content ul li a {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+header .content ul li a:hover {
+  color: red;
+}
+
+@media screen and (max-width: 992px) {
+  header .content ul li a {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+header .content ul li button {
+  height: 60px;
+  width: 180px;
+}
+
+.header .cover, .header .cover1, .header .cover2 {
+  background-image: url(../img/bg_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+  color: white;
+}
+
+.header .cover .overlay, .header .cover1 .overlay, .header .cover2 .overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .cover .overlay .container, .header .cover1 .overlay .container, .header .cover2 .overlay .container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header .cover .overlay .container .content, .header .cover1 .overlay .container .content, .header .cover2 .overlay .container .content {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 992px) {
+  .header .cover .overlay .container .content, .header .cover1 .overlay .container .content, .header .cover2 .overlay .container .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header .cover .overlay .container .content, .header .cover1 .overlay .container .content, .header .cover2 .overlay .container .content {
+    max-width: 100%;
+  }
+}
+
+.header .cover .overlay .container .content h1, .header .cover1 .overlay .container .content h1, .header .cover2 .overlay .container .content h1 {
+  font-family: "Work Sans", Arial, sans-serif;
+  background-image: url(../img/bg_1.jpg);
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  text-align: center;
+  font-size: 300px;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: .8;
+  overflow: hidden;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 992px) {
+  .header .cover .overlay .container .content h1, .header .cover1 .overlay .container .content h1, .header .cover2 .overlay .container .content h1 {
+    font-size: 30px;
+    line-height: 55px;
+  }
+}
+
+.header .cover .overlay .container .content p, .header .cover1 .overlay .container .content p, .header .cover2 .overlay .container .content p {
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 5px;
+  line-height: 1.4;
+}
+
+.pricing-for-courses {
+  background-color: black;
+  padding: 105px 0px;
+}
+
+.pricing-for-courses .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 992px) {
+  .pricing-for-courses .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.pricing-for-courses .content .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .pricing-for-courses .content .description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.pricing-for-courses .content .description .color-header {
+  margin-bottom: 10px;
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+  background-position: 0% 0%;
+  background-attachment: scroll;
+  background-clip: text;
+  font-size: 13px;
+  font-weight: 400;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  position: relative;
+  text-align: center;
+}
+
+.pricing-for-courses .content .description .color-header .after {
+  position: absolute;
+  top: -5px;
+  left: -15px;
+  width: 5px;
+  height: 22px;
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+  content: '';
+}
+
+.pricing-for-courses .content .description .color-header .after:after {
+  position: absolute;
+  left: -8px;
+  width: 5px;
+  height: 22px;
+  content: '';
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+}
+
+.pricing-for-courses .content .description .color-header .after::before {
+  position: absolute;
+  top: 2px;
+  left: -16px;
+  width: 5px;
+  height: 18px;
+  content: '';
+  display: block;
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+}
+
+.pricing-for-courses .content .description .color-header .before {
+  position: absolute;
+  top: -5px;
+  right: -15px;
+  width: 5px;
+  height: 22px;
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+  display: block;
+  content: '';
+}
+
+.pricing-for-courses .content .description .color-header .before:after {
+  position: absolute;
+  right: -8px;
+  width: 5px;
+  height: 22px;
+  content: '';
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+}
+
+.pricing-for-courses .content .description .color-header .before::before {
+  position: absolute;
+  top: 2px;
+  right: -16px;
+  width: 5px;
+  height: 18px;
+  content: '';
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+}
+
+.pricing-for-courses .content .description h2 {
+  margin-bottom: 16px;
+  color: white;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.pricing-for-courses .content .description p {
+  font-size: 15px;
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.pricing-for-courses .content .enroll-now {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .pricing-for-courses .content .enroll-now {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:first-child, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(2), .pricing-for-courses .content .enroll-now .enroll-div:nth-child(3) {
+  background-image: url(../img/program-1.jpg);
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  height: 500px;
+  width: calc(95%/3);
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 24px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media only screen and (max-width: 992px) {
+  .pricing-for-courses .content .enroll-now .enroll-div:first-child, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(2), .pricing-for-courses .content .enroll-now .enroll-div:nth-child(3) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:first-child:hover, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(2):hover, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(3):hover {
+  border: 1px solid red;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:first-child:hover .before-hover, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(2):hover .before-hover, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(3):hover .before-hover {
+  display: none;
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:first-child:hover .after-hover, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(2):hover .after-hover, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(3):hover .after-hover {
+  display: block;
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:first-child .before-hover, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(2) .before-hover, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(3) .before-hover {
+  display: block;
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:first-child .before-hover h3, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(2) .before-hover h3, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(3) .before-hover h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:first-child .before-hover p, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(2) .before-hover p, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(3) .before-hover p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:first-child .after-hover, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(2) .after-hover, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(3) .after-hover {
+  display: none;
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:first-child .after-hover .btns, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(2) .after-hover .btns, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(3) .after-hover .btns {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:first-child .after-hover .btns button, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(2) .after-hover .btns button, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(3) .after-hover .btns button {
+  color: white;
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:first-child .after-hover div span, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(2) .after-hover div span, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(3) .after-hover div span {
+  display: block;
+  margin-bottom: 10px;
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+  background-position: 0% 0%;
+  background-attachment: scroll;
+  background-clip: text;
+  font-size: 34px;
+  font-weight: 800;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:first-child .after-hover div a, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(2) .after-hover div a, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(3) .after-hover div a {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:first-child .after-hover div p, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(2) .after-hover div p, .pricing-for-courses .content .enroll-now .enroll-div:nth-child(3) .after-hover div p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:nth-child(2) {
+  background-image: url(../img/program-2.jpg);
+}
+
+.pricing-for-courses .content .enroll-now .enroll-div:nth-child(3) {
+  background-image: url(../img/program-3.jpg);
+}
+
+.fitness {
+  background-color: black;
+}
+
+.fitness .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .fitness .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.fitness .content img {
+  width: 50%;
+  height: 1096px;
+}
+
+.fitness .content .fitness-description {
+  width: 47%;
+}
+
+.fitness .content .fitness-description .fitness-description-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 992px) {
+  .fitness .content .fitness-description .fitness-description-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.fitness .content .fitness-description .fitness-description-div:last-child {
+  margin-bottom: 0px;
+}
+
+.fitness .content .fitness-description .fitness-description-div .img {
+  color: blanchedalmond;
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+  margin-left: 20px;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.fitness .content .fitness-description .fitness-description-div .img img {
+  height: 40px;
+  width: 40px;
+}
+
+.fitness .content .fitness-description .fitness-description-div .desc {
+  text-align: right;
+}
+
+.fitness .content .fitness-description .fitness-description-div .desc h2 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: white;
+}
+
+.fitness .content .fitness-description .fitness-description-div .desc p {
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.counter-section {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/bg_4.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg_4.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 50px 0px;
+}
+
+.counter-section .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 200px;
+}
+
+@media only screen and (max-width: 992px) {
+  .counter-section .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.counter-section .content .counter-div {
+  text-align: center;
+}
+
+.counter-section .content .counter-div h2 {
+  font-weight: 900;
+  font-size: 50px;
+  color: #fff;
+  line-height: 1.8;
+}
+
+.counter-section .content .counter-div p {
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+  background-position: 0% 0%;
+  background-attachment: scroll;
+  background-clip: text;
+  font-size: 13px;
+  font-weight: 400;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.our-coaches .content .description-trainer p {
+  width: 634px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.our-coaches .content .trainer {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 992px) {
+  .our-coaches .content .trainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.our-coaches .content .trainer img {
+  height: 492px;
+  width: 25%;
+}
+
+.our-coaches .content .trainer .bio {
+  width: 25%;
+  padding: 24px 48px;
+}
+
+.our-coaches .content .trainer .bio h3 {
+  display: block;
+  margin-bottom: 20px;
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+  background-position: 0% 0%;
+  background-attachment: scroll;
+  background-clip: text;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  position: relative;
+}
+
+.our-coaches .content .trainer .bio h3:after {
+  content: '';
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+  height: 1px;
+  width: 100px;
+  position: absolute;
+  top: 21px;
+  left: 0;
+}
+
+.our-coaches .content .trainer .bio h2 {
+  line-height: 1.4;
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.our-coaches .content .trainer .bio p {
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.our-coaches .content .trainer .bio .social {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .our-coaches .content .trainer .bio .social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.our-coaches .content .trainer .bio .social a {
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+  height: 60px;
+  width: 60px;
+  position: relative;
+}
+
+.our-coaches .content .trainer .bio .social a i {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+
+.testimonial {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/bg_4.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg_4.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.testimonial .owl-carousel .owl-nav {
+  visibility: hidden;
+}
+
+.testimonial .owl-carousel .owl-dots {
+  position: relative;
+  top: -70px;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.testimonial .owl-carousel .owl-dots .active span {
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%) !important;
+}
+
+.testimonial .owl-carousel .owl-dots .owl-dot span {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.testimonial .owl-carousel .cover, .testimonial .owl-carousel .cover1, .testimonial .owl-carousel .cover2 {
+  position: relative;
+  height: 100vh;
+  color: white;
+}
+
+.testimonial .owl-carousel .cover .container, .testimonial .owl-carousel .cover1 .container, .testimonial .owl-carousel .cover2 .container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.testimonial .owl-carousel .cover .container .content, .testimonial .owl-carousel .cover1 .container .content, .testimonial .owl-carousel .cover2 .container .content {
+  max-width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 992px) {
+  .testimonial .owl-carousel .cover .container .content, .testimonial .owl-carousel .cover1 .container .content, .testimonial .owl-carousel .cover2 .container .content {
+    max-width: 100%;
+  }
+}
+
+.testimonial .owl-carousel .cover .container .content .coach-img, .testimonial .owl-carousel .cover1 .container .content .coach-img, .testimonial .owl-carousel .cover2 .container .content .coach-img {
+  position: relative;
+}
+
+.testimonial .owl-carousel .cover .container .content .coach-img img, .testimonial .owl-carousel .cover1 .container .content .coach-img img, .testimonial .owl-carousel .cover2 .container .content .coach-img img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  -o-object-fit: inherit;
+     object-fit: inherit;
+}
+
+.testimonial .owl-carousel .cover .container .content .coach-img span, .testimonial .owl-carousel .cover1 .container .content .coach-img span, .testimonial .owl-carousel .cover2 .container .content .coach-img span {
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  bottom: -10px;
+}
+
+.testimonial .owl-carousel .cover .container .content .coach-img span i, .testimonial .owl-carousel .cover1 .container .content .coach-img span i, .testimonial .owl-carousel .cover2 .container .content .coach-img span i {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.testimonial .owl-carousel .cover .container .content p, .testimonial .owl-carousel .cover1 .container .content p, .testimonial .owl-carousel .cover2 .container .content p {
+  margin: 40px 0px;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+
+.testimonial .owl-carousel .cover .container .content h2, .testimonial .owl-carousel .cover1 .container .content h2, .testimonial .owl-carousel .cover2 .container .content h2 {
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+}
+
+.testimonial .owl-carousel .cover .container .content h3, .testimonial .owl-carousel .cover1 .container .content h3, .testimonial .owl-carousel .cover2 .container .content h3 {
+  display: block;
+  margin-top: 20px;
+  background-image: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+  background-position: 0% 0%;
+  background-attachment: scroll;
+  background-clip: text;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+/*popup*/
+#myImg {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 50;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(74, 54, 0, 0.6);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  border-radius: initial;
+}
+
+.modal-content .make-appointment {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 992px) {
+  .modal-content .make-appointment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.modal-content .make-appointment button {
+  width: 100%;
+  height: 60px;
+}
+
+.modal-content .make-appointment h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #1F1F1F;
+  margin-bottom: 46px;
+  line-height: 1.2em;
+}
+
+.modal-content .make-appointment .inputs, .modal-content .make-appointment .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  /**/
+  /**/
+}
+
+@media only screen and (max-width: 992px) {
+  .modal-content .make-appointment .inputs, .modal-content .make-appointment .input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.modal-content .make-appointment .inputs .input-group, .modal-content .make-appointment .input .input-group {
+  width: 49%;
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+
+@media screen and (max-width: 992px) {
+  .modal-content .make-appointment .inputs .input-group, .modal-content .make-appointment .input .input-group {
+    width: 100%;
+  }
+}
+
+.modal-content .make-appointment .inputs .input-group .form-control, .modal-content .make-appointment .input .input-group .form-control {
+  border-radius: initial;
+  width: 100%;
+  height: 50px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+.modal-content .make-appointment .inputs .input-group .input-group-addon, .modal-content .make-appointment .input .input-group .input-group-addon {
+  border-radius: initial;
+  height: 50px !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: initial;
+  border: none;
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.modal-content .make-appointment .inputs .input-group .input-group-addon .glyphicon, .modal-content .make-appointment .input .input-group .input-group-addon .glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.modal-content .make-appointment .inputs .input-group .input-group-addon .glyphicon-time:before, .modal-content .make-appointment .input .input-group .input-group-addon .glyphicon-time:before {
+  content: "\e023";
+}
+
+.modal-content .make-appointment .inputs select, .modal-content .make-appointment .input select {
+  width: 49%;
+  height: 50px;
+  margin-bottom: 30px;
+  color: #aca5a5;
+  padding: 0px 4px;
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 992px) {
+  .modal-content .make-appointment .inputs select, .modal-content .make-appointment .input select {
+    width: 100%;
+  }
+}
+
+.modal-content .make-appointment .inputs select:focus, .modal-content .make-appointment .input select:focus {
+  outline: none;
+}
+
+.modal-content .make-appointment .inputs input, .modal-content .make-appointment .input input {
+  width: 49%;
+  height: 50px;
+  margin-bottom: 30px;
+  color: #aca5a5;
+  padding: 18px;
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 992px) {
+  .modal-content .make-appointment .inputs input, .modal-content .make-appointment .input input {
+    width: 100%;
+  }
+}
+
+.modal-content .make-appointment .inputs input:focus, .modal-content .make-appointment .input input:focus {
+  outline: none;
+  border-bottom: 1px solid #959595;
+}
+
+.modal-content .make-appointment .inputs input::-webkit-input-placeholder, .modal-content .make-appointment .input input::-webkit-input-placeholder {
+  color: #aca5a5;
+}
+
+.modal-content .make-appointment .inputs input:-ms-input-placeholder, .modal-content .make-appointment .input input:-ms-input-placeholder {
+  color: #aca5a5;
+}
+
+.modal-content .make-appointment .inputs input::-ms-input-placeholder, .modal-content .make-appointment .input input::-ms-input-placeholder {
+  color: #aca5a5;
+}
+
+.modal-content .make-appointment .inputs input::placeholder, .modal-content .make-appointment .input input::placeholder {
+  color: #aca5a5;
+}
+
+.modal-content .make-appointment .inputs input[type="date"], .modal-content .make-appointment .input input[type="date"] {
+  color: #aca5a5;
+  display: block;
+  position: relative;
+  padding: 1rem 3.5rem 1rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='22' viewBox='0 0 20 22'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23688EBB' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' transform='translate(1 1)'%3E%3Crect width='18' height='18' y='2' rx='2'/%3E%3Cpath d='M13 0L13 4M5 0L5 4M0 8L18 8'/%3E%3C/g%3E%3C/svg%3E") right 1rem center no-repeat;
+  cursor: pointer;
+}
+
+.modal-content .make-appointment .inputs input[type="date"]:focus, .modal-content .make-appointment .input input[type="date"]:focus {
+  outline: none;
+  border-bottom: 1px solid #959595;
+}
+
+.modal-content .make-appointment .inputs ::-webkit-datetime-edit-month-field:hover,
+.modal-content .make-appointment .inputs ::-webkit-datetime-edit-day-field:hover,
+.modal-content .make-appointment .inputs ::-webkit-datetime-edit-year-field:hover, .modal-content .make-appointment .input ::-webkit-datetime-edit-month-field:hover,
+.modal-content .make-appointment .input ::-webkit-datetime-edit-day-field:hover,
+.modal-content .make-appointment .input ::-webkit-datetime-edit-year-field:hover {
+  background: rgba(0, 120, 250, 0.1);
+}
+
+.modal-content .make-appointment .inputs ::-webkit-datetime-edit-text, .modal-content .make-appointment .input ::-webkit-datetime-edit-text {
+  opacity: 0;
+}
+
+.modal-content .make-appointment .inputs ::-webkit-clear-button,
+.modal-content .make-appointment .inputs ::-webkit-inner-spin-button, .modal-content .make-appointment .input ::-webkit-clear-button,
+.modal-content .make-appointment .input ::-webkit-inner-spin-button {
+  display: none;
+}
+
+.modal-content .make-appointment .inputs ::-webkit-calendar-picker-indicator, .modal-content .make-appointment .input ::-webkit-calendar-picker-indicator {
+  position: absolute;
+  width: 2.5rem;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+  color: #ddd;
+  background: #ddd;
+}
+
+.modal-content .make-appointment .inputs input[type="date"]:hover::-webkit-calendar-picker-indicator, .modal-content .make-appointment .input input[type="date"]:hover::-webkit-calendar-picker-indicator {
+  opacity: 0.05;
+}
+
+.modal-content .make-appointment .inputs input[type="date"]:hover::-webkit-calendar-picker-indicator:hover, .modal-content .make-appointment .input input[type="date"]:hover::-webkit-calendar-picker-indicator:hover {
+  opacity: 0.15;
+}
+
+.modal-content .make-appointment .input input {
+  width: 100%;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/*
+font-family: 'Yeseva One', ;
+font-family: 'Lato', ;
+*/
+/*owl-carousel,.owl-theme{
+    @media screen and (max-width: 992px) {
+        height:100vh;
+      }
+}*/
+.owl-dots {
+  position: absolute;
+  top: 600px;
+  right: 50%;
+}
+/*# sourceMappingURL=main.css.map */
