@@ -27,6 +27,7 @@ header{
     @media screen and (max-width: 992px) {
         height:80px;
         width: 100% !important;
+        
      }
         .content{
         @include flex;
@@ -281,6 +282,10 @@ header{
                     border: 1px solid black;
                     box-sizing: border-box;
                     position: relative;
+                    @media screen and (max-width: 992px) {
+                        width: 100%;
+                        margin-bottom: 20px;
+                     }
                     &:hover{   
                         border:1px solid $hover-font-color ;
                         box-sizing: border-box !important;
@@ -361,13 +366,37 @@ header{
         img{
             width: 50%;
             height: 1096px;
+            @media screen and (max-width: 992px) {
+                width: 100%;
+             }
         }
         .fitness-description{
             width: 47%;
+            @media screen and (max-width: 992px) {
+                width: 100%;
+             }
             .fitness-description-div{
                 @include flex;
                 margin-bottom: 40px;
                 align-items: flex-start;
+                opacity: 0;
+                        transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                        opacity .3s .25s ease-out;
+                        &:nth-child(2){
+                            transition-delay: 0.4s;          
+                          } 
+                          &:nth-child(3){
+                            transition-delay: 0.6s;          
+                          }
+                          &:nth-child(4){
+                            transition-delay: 0.8s;          
+                          }
+                          &:nth-child(5){
+                            transition-delay: 1s;          
+                          }
+                @media screen and (max-width: 992px) {
+                    flex-direction: row;
+                 }
                 &:last-child{
                     margin-bottom: 0px;
                 }
@@ -411,6 +440,9 @@ header{
     .content{
         @include flex;
         padding: 0px 200px;
+        @media screen and (max-width: 992px) {
+            padding: 0px;
+         }
         .counter-div{
             text-align: center;
             h2{
@@ -452,10 +484,17 @@ header{
             img{
                 height: 492px;
                 width:25%;
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                 }
             }
             .bio{
                 width:25%;
                 padding: 24px 48px;
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+
+                 }
                 h3{
                     display: block;
                     margin-bottom: 20px;
@@ -496,11 +535,23 @@ header{
                 .social{
                     margin-top: 24px;
                     @include flex;
+                    @media screen and (max-width: 992px) {
+                        flex-direction: row;
+                     }
                     a{
                         background-image: $linear-gradient;
                         height: 60px;
                         width: 60px;
                         position: relative;
+                        opacity: 0;
+                        transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                        opacity .3s .25s ease-out;
+                        &:nth-child(2){
+                            transition-delay: 0.6s;          
+                          } 
+                          &:nth-child(3){
+                            transition-delay: 1s;          
+                          }
                         i{
                             color: white;
                             position: absolute;
@@ -526,7 +577,7 @@ header{
         }
         .owl-dots{
             position: relative;
-            top:-70px;
+            top:-150px;
             transform: translate(50%,50%);
             .active{
                 span{
@@ -629,6 +680,18 @@ header{
             margin-top: 60px;
             .recent-blog-div{
                 width: 31%;
+                opacity: 0;
+                        transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                        opacity .3s .25s ease-out;
+                        &:nth-child(2){
+                            transition-delay: 0.6s;          
+                          } 
+                          &:nth-child(3){
+                            transition-delay: 1s;          
+                          }
+                @media screen and (max-width: 992px) {
+                    width: 100% !important;
+                 }
                 img{
                     width: 100%;
                     margin-bottom: 20px;
@@ -636,6 +699,9 @@ header{
                 .recent-blog-description{
                     @include flex;
                     align-items: flex-start;
+                    @media screen and (max-width: 992px) {
+                        flex-direction: row;
+                     }
                     .date{
                         h3{
                             font-size: 44px;
@@ -693,9 +759,17 @@ header{
         width: 100%;
         img{
             width: 45%;
+            @media screen and (max-width: 992px) {
+                width: 100%;
+                margin-bottom: 20px;
+             }
         }
         .contact-us-content{
             width: 45%;
+            @media screen and (max-width: 992px) {
+                width: 100%;
+                margin-bottom: 20px;
+             }
             .desc{
                 h2{
                     font-size: 34px;
@@ -704,6 +778,9 @@ header{
                     text-transform: uppercase;
                     margin-bottom: 16px;
                     color: white;
+                    @media screen and (max-width: 992px) {
+                        font-size: 30px;
+                     }
                 }
                 p{
                     font-size: 15px;
@@ -719,6 +796,9 @@ header{
                     color: white;
                     width: 45%;
                     height: 58px !important;
+                    @media screen and (max-width: 992px) {
+                        width: 100%;
+                     }
                 }
                 input[type="text"],textarea{
                     background: #000;
@@ -731,6 +811,9 @@ header{
                     font-size: 13px;
                     width: 45%;
                     box-sizing: border-box;
+                    @media screen and (max-width: 992px) {
+                        width: 100%;
+                     }
                     &::placeholder{
                         color: rgba(255, 255, 255, 0.9) !important;
                         font-size: 13px;
@@ -746,6 +829,21 @@ header{
         a{ 
             width: 25%;
             position: relative;
+            opacity: 0;
+                        transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                        opacity .3s .25s ease-out;
+                        &:nth-child(2){
+                            transition-delay: 0.4s;          
+                          } 
+                          &:nth-child(3){
+                            transition-delay: 0.6s;          
+                          }
+                          &:nth-child(4){
+                            transition-delay:0.8s;          
+                          }
+            @media screen and (max-width: 992px) {
+                width: 100%;
+             }
             i{
                 display: none;
                 color: white;
@@ -764,6 +862,7 @@ header{
                     z-index: 1;
                     top: 50%;
                     right: 50%;
+                    transform: translate(50%,50%);
                     background-color: $hover-font-color;
                     padding: 20px;
                     transform: rotate(45deg);
@@ -793,6 +892,10 @@ footer{
         }
         .about-us{
             width: 25%;
+            @media screen and (max-width: 992px) {
+                width: 100%;
+                margin-bottom: 20px;
+             }
             h2{}
             p{
                 color: $p-color;
@@ -804,6 +907,10 @@ footer{
                 margin-top: 50px;
                 @include flex;
                 width: 60%;
+                @media screen and (max-width: 992px) {
+                    flex-direction: row;
+                    margin-top: 30px;
+                 }
                 a{
                     height: 50px;
                     width: 50px;
@@ -824,11 +931,18 @@ footer{
         }
         .recent-blog{
             width: 35%;
+            @media screen and (max-width: 992px) {
+                width: 100%;
+                margin-bottom: 20px;
+             }
             h2{}
             .blog{
                 @include flex;
                 align-items: flex-start;
                 margin-bottom: 15px;
+                @media screen and (max-width: 992px) {
+                    flex-direction: row;
+                 }
                 img{
                     height: 80px;
                     width: 80px;
@@ -843,6 +957,10 @@ footer{
                     }
                     ul{
                         width: 80% !important;
+                        @media screen and (max-width: 992px) {
+                            width: 100% !important;
+                            flex-direction: row;
+                         }
                         li{
                             a{
                                 font-size: 12px !important;
@@ -860,6 +978,10 @@ footer{
         }
         .services{
             width: 15%;
+            @media screen and (max-width: 992px) {
+                width: 100%;
+                margin-bottom: 20px;
+             }
             h2{}
             a{
                 display: block;
@@ -870,6 +992,10 @@ footer{
         }
         .have-a-questions{
             width: 20%;
+            @media screen and (max-width: 992px) {
+               width: 100%;
+               margin-bottom: 20px;
+             }
             h2{}
             .contacts{
                 font-size: 16px;
@@ -877,6 +1003,9 @@ footer{
                 @include flex;
                 align-items: flex-start;
                 justify-content: flex-start;
+                @media screen and (max-width: 992px) {
+                    flex-direction: row;
+                 }
                 i{
                     color: white;
                     margin-right: 10px;
@@ -892,6 +1021,10 @@ footer{
         }
     }
 }
+.is-visible{
+    opacity: 1 !important;
+    //transform:rotateZ(-2deg) ;
+  }
 /*popup*/
 #myImg {
     cursor: pointer;
