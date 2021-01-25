@@ -778,8 +778,110 @@ header{
 }
 footer{
     background: #000;
+    padding: 112px 0px;
     .content{
         @include flex;
+        align-items: flex-start;
+        width: 100%;
+        h2{
+            margin-bottom: 40px;
+            font-size: 16px;
+            font-weight: 900;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .about-us{
+            width: 25%;
+            h2{}
+            p{
+                color: $p-color;
+                font-size: 16px;
+                line-height: 1.8;
+                font-weight: 400;
+            }
+            .social{
+                margin-top: 50px;
+                a{
+                    i{
+                        height: 50px;
+                        width: 50px;
+                        font-size: 26px;
+                        color: white;
+                        border-radius: 50%;
+                        background:rgba(255, 255, 255, 0.05);
+
+                    }
+                }
+            }
+        }
+        .recent-blog{
+            width: 35%;
+            h2{}
+            .blog{
+                @include flex;
+                align-items: flex-start;
+                margin-bottom: 15px;
+                img{
+                    height: 80px;
+                    width: 80px;
+                    margin-right: 20px;
+                }
+                .details{
+                    a{
+                        font-size: 16px;
+                        font-weight: 300;
+                        text-decoration: none;
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                    ul{
+                        li{
+                            a{
+                                font-size: 12px !important;
+                                color: rgba(255, 255, 255, 0.7);
+                                i{
+                                    color: $p-color;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .services{
+            width: 15%;
+            h2{}
+            a{
+                display: block;
+                color: $p-color;
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+        }
+        .have-a-questions{
+            width: 20%;
+            h2{}
+            .contacts{
+                font-size: 16px;
+                margin-bottom: 15px;
+                @include flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                i{
+                    color: white;
+                    margin-right: 10px;
+                }
+                a{
+                    color: $p-color;
+                    text-decoration: none;
+                }
+                p{
+                    color: $p-color;
+                }
+            }
+        }
     }
 }
 /*popup*/
