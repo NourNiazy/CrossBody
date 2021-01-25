@@ -9,6 +9,18 @@ $('.stat-number').each(function () {
        }
     });
  });
+ $(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 300) {
+          $(".black").css("background" , "black");
+        }
+  
+        else{
+            $(".black").css("background" , "transparent");  	
+        }
+    })
+  });
  
 var owl = $('.owl-carousel');
 owl.owlCarousel({
