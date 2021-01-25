@@ -28,7 +28,7 @@ owl.owlCarousel({
     loop:true,
     margin:0,
     autoplay:true,
-    autoplayTimeout:5000,
+    autoplayTimeout:6000,
     nav:true,
     autoplayHoverPause:true
 });
