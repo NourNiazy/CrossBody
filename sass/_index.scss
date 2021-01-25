@@ -3,21 +3,7 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
-#res {
-    @media screen and (max-width: 992px) {
-        height: 40px;
-        width: 40px;
-        border-radius: 5px;
-        background-position: center;
-        box-shadow: 5px 5px 13px 0 rgba(204, 22, 134, 0.3);
-        display: block;
-        position: fixed;
-        left: 20px;
-        top: 20px;
-        z-index: 1;
-    }
-}
-header{
+nav{
     background: transparent; 
     z-index: 12;
     width:100%;
@@ -26,7 +12,7 @@ header{
     position:fixed;
     @media screen and (max-width: 992px) {
         height:80px;
-        width: 100% !important;
+        width: 100% ;
         
      }
         .content{

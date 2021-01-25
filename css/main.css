@@ -244,23 +244,7 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
-@media screen and (max-width: 992px) {
-  #res {
-    height: 40px;
-    width: 40px;
-    border-radius: 5px;
-    background-position: center;
-    -webkit-box-shadow: 5px 5px 13px 0 rgba(204, 22, 134, 0.3);
-            box-shadow: 5px 5px 13px 0 rgba(204, 22, 134, 0.3);
-    display: block;
-    position: fixed;
-    left: 20px;
-    top: 20px;
-    z-index: 1;
-  }
-}
-
-header {
+nav {
   background: transparent;
   z-index: 12;
   width: 100%;
@@ -270,13 +254,13 @@ header {
 }
 
 @media screen and (max-width: 992px) {
-  header {
+  nav {
     height: 80px;
-    width: 100% !important;
+    width: 100%;
   }
 }
 
-header .content {
+nav .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,7 +274,7 @@ header .content {
 }
 
 @media only screen and (max-width: 992px) {
-  header .content {
+  nav .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -299,7 +283,7 @@ header .content {
 }
 
 @media screen and (max-width: 992px) {
-  header .content {
+  nav .content {
     width: 100% !important;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -308,28 +292,28 @@ header .content {
   }
 }
 
-header .content .icon {
+nav .content .icon {
   display: none;
   text-decoration: none;
 }
 
 @media screen and (max-width: 992px) {
-  header .content .icon {
+  nav .content .icon {
     display: block;
   }
 }
 
-header .content .icon i {
+nav .content .icon i {
   display: none;
 }
 
 @media screen and (max-width: 992px) {
-  header .content .icon i {
+  nav .content .icon i {
     display: block;
   }
 }
 
-header .content a {
+nav .content a {
   font-size: 20px;
   font-weight: 900;
   font-family: 'Work Sans', sans-serif;
@@ -346,7 +330,7 @@ header .content a {
   text-transform: uppercase;
 }
 
-header .content ul {
+nav .content ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,7 +344,7 @@ header .content ul {
 }
 
 @media only screen and (max-width: 992px) {
-  header .content ul {
+  nav .content ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -369,7 +353,7 @@ header .content ul {
 }
 
 @media screen and (max-width: 992px) {
-  header .content ul {
+  nav .content ul {
     background-color: #1F1F1F;
     padding: 20px;
     text-align: center;
@@ -377,11 +361,11 @@ header .content ul {
   }
 }
 
-header .content ul li {
+nav .content ul li {
   list-style: none;
 }
 
-header .content ul li a {
+nav .content ul li a {
   display: inline-block;
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
@@ -390,18 +374,18 @@ header .content ul li a {
   text-decoration: none;
 }
 
-header .content ul li a:hover {
+nav .content ul li a:hover {
   color: red;
 }
 
 @media screen and (max-width: 992px) {
-  header .content ul li a {
+  nav .content ul li a {
     padding: 20px;
     text-align: center;
   }
 }
 
-header .content ul li button {
+nav .content ul li button {
   height: 60px;
   width: 180px;
 }
