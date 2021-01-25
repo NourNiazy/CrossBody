@@ -1746,6 +1746,10 @@ footer .content .recent-blog .blog .details a {
   color: rgba(255, 255, 255, 0.7);
 }
 
+footer .content .recent-blog .blog .details ul {
+  width: 80% !important;
+}
+
 footer .content .recent-blog .blog .details ul li a {
   font-size: 12px !important;
   color: rgba(255, 255, 255, 0.7);
@@ -1764,7 +1768,7 @@ footer .content .services a {
   display: block;
   color: rgba(255, 255, 255, 0.4);
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 footer .content .have-a-questions {
