@@ -1665,15 +1665,43 @@ footer .content .about-us p {
 
 footer .content .about-us .social {
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+}
+
+@media only screen and (max-width: 992px) {
+  footer .content .about-us .social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer .content .about-us .social a {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 footer .content .about-us .social a i {
-  height: 50px;
-  width: 50px;
-  font-size: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   color: white;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 26px;
 }
 
 footer .content .recent-blog {
