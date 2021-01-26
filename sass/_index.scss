@@ -461,6 +461,9 @@ nav{
                 width: 634px;
                 font-weight: 400;
                 text-align: center;
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                 }
             }
         }
         .trainer{
@@ -1008,21 +1011,20 @@ footer{
         }
     }
 }
+//show-on-scroll
 .is-visible{
     opacity: 1 !important;
     //transform:rotateZ(-2deg) ;
   }
-
-  
- 
-  
+//owl-carasol-slider
 .owl-dots{
     position: absolute;
     top:600px;
     right:50%;
 }
+//responsive menu
 #myLinks{
     @media screen and (max-width: 992px) {
-        background: #000;
+        background-image: $linear-gradient;
      }
 }
