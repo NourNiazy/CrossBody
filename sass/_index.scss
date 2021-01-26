@@ -170,16 +170,9 @@ nav{
             width: 100%;
             .color-header{
                 margin-bottom: 10px;
-                background-image:$linear-gradient;
                 background-position: 0% 0%;
-                background-attachment :scroll;
-                background-clip :text;
                 font-size :13px;
                 font-weight: 400;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                -moz-background-clip: text;
-                -moz-text-fill-color: transparent;
                 position: relative;
                 text-align: center;
                 .after{
@@ -439,16 +432,8 @@ nav{
                 line-height: 1.8;
             }
             p{
-                background-image:$linear-gradient;
-                background-position: 0% 0%;
-                background-attachment :scroll;
-                background-clip :text;
                 font-size :13px;
                 font-weight: 400;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                -moz-background-clip: text;
-                -moz-text-fill-color: transparent;
             }
         }
     }
@@ -488,17 +473,9 @@ nav{
                 h3{
                     display: block;
                     margin-bottom: 20px;
-                    background-image:$linear-gradient;
-                    background-position: 0% 0%;
-                    background-attachment :scroll;
-                    background-clip :text;
                     font-weight: 500;
                     text-transform: uppercase;
                     font-size: 13px;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    -moz-background-clip: text;
-                    -moz-text-fill-color: transparent;
                     position: relative;
                     &:after{
                         content: '';
@@ -642,17 +619,9 @@ nav{
                          h3{
                             display: block;
                             margin-top: 20px;
-                            background-image:$linear-gradient;
-                            background-position: 0% 0%;
-                            background-attachment :scroll;
-                            background-clip :text;
                             font-weight: 500;
                             text-transform: uppercase;
                             font-size: 13px;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            -moz-background-clip: text;
-                            -moz-text-fill-color: transparent;
                          }
                 }   
             }
@@ -698,15 +667,7 @@ nav{
                             font-weight: 700;
                             //line-height: 1.3;
                             display: block;
-                            background-image:$linear-gradient;
-                            background-position: 0% 0%;
-                            background-attachment :scroll;
-                            background-clip :text;
                             text-transform: uppercase;
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            -moz-background-clip: text;
-                            -moz-text-fill-color: transparent;
                         }
                         span{
                             color:rgba(255,255, 255, 0.7);

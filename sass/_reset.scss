@@ -1,6 +1,9 @@
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     cursor: pointer;
+    &:hover{
+        color: $hover-font-color !important;
+    }
 }
 
 button {
@@ -179,5 +182,12 @@ i{
     color:rgb(143, 145, 149);
 }
 .linear-gradient-font{
-    
+    background-image:$linear-gradient;
+                background-position: 0% 0%;
+                background-attachment :scroll;
+                background-clip :text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;    
 }
